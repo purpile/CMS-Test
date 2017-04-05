@@ -1,0 +1,18 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^\/index.php$
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule ^(.*)$ http://localhost/cmsv1/ [L,R=301]
+
+
+RewriteRule ^([a-z-A-Z-0-9]+)/?$ index.php?page=$1 [L,NC,QSA]
+RewriteRule ^([a-z-A-Z-0-9]+)/([a-z-A-Z-0-9]+)/?$ index.php?page=$1&subpage=$2 [L,NC,QSA]
+#RewriteRule ^([a-z-A-Z-0-9]+)/([a-z-A-Z-0-9]+)/([a-z-A-Z-0-9]+)/?$ index.php?page=$1&subpage=$2&extrasubpage=$3 [L,NC,QSA]
+
+### Aktualnosci
+#RewriteRule ^([a-z-A-Z-0-9]+)/([a-z-A-Z-0-9]+)/a_([0-9]+),([a-z-A-Z-0-9]+)/?$ index.php?page=$1&subpage=$2&id_aktualnosc=$3&tytul_aktualnosci=$4 [L,NC,QSA]
+#RewriteRule ^([a-z-A-Z-0-9]+)/([a-z-A-Z-0-9]+)/s,([0-9]+)/?$ index.php?page=$1&subpage=$2&strona=$3 [L,NC,QSA]

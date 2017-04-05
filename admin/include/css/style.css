@@ -1,0 +1,206 @@
+body{
+	margin: 0;
+	background-color: #edf0f1;
+	font-size: 15px;
+}
+
+/*
+============
+	DEFAULTS
+============
+ */
+ 
+ a, a:link, a:visited{
+	 text-decoration: none;
+	 cursor: pointer;
+ }
+ 
+ .unbutton{
+	 border: 0;
+	 background-color: transparent;
+ }
+ 
+ .btn:hover {
+	color: #fff;
+	background-color: #262b33;
+ }
+ .btn {
+	border: 1px solid #262b33;
+	background-color: transparent;
+	padding: 0.5% 1%;
+	margin: 7px;
+	float: left;
+ }
+
+ .input-style {
+	 padding: 0.5% 1%;
+	 background-color: transparent;
+	 border: 0;
+	 border-bottom: 1px solid rgba(0,0,0, 0.3);
+ }
+ 
+ .label-style {
+	color: #666;
+	margin-right: 2%;
+	 padding: 0.5% 1%;
+ }
+ 
+.center {
+	 text-align: center;
+ }
+ 
+ .weight {
+	 font-weight: bold;
+ }
+ 
+ .silver {
+	 color: #CCC;
+ }
+ 
+ .padding {
+	 padding: 3% 0;
+ }
+ 
+ .mid {
+	 width: 50%;
+ } 
+ .small {
+	 width: 30%;
+ } 
+ .long {
+	 width: 70%;
+ } 
+ .full {
+	 width: 100%;
+ }
+ 
+ .space {
+	margin: 20px 0; 
+ }
+ /*
+	Login
+ */
+ 
+.login-box{
+	width: 500px;
+	height: 400px;
+	background-color: #fff;
+	margin: auto;
+	margin-top: 20%;
+	box-shadow: 1px 1px 2px 4px rgba(0,0,0, 0.3);
+}
+
+.form-box{
+	margin-top: 10%;
+}
+
+.login-box h3{
+	padding-top: 10%;
+}
+
+
+.form-box-down{
+	width: 560px;
+	margin-left: -30px;
+	margin-top: 200px;
+	height: 250px;
+	background-color: #188eb5;
+	position: absolute;
+	z-index: -10;
+}
+
+.form-box input, .form-box label{
+	margin-top: 3%;
+	color: black;
+	border: 0;
+	border-bottom: 1px solid gray;
+	padding: 1.5%;
+}
+
+.form-box button{
+	color: #188eb5;
+	background-color: transparent;
+	border: 0;
+	font-size: 17px;
+	margin-left: 45%;
+	margin-top: 60px;
+}
+ 
+ /*
+	Admin menu
+ */
+
+.admin-bar {
+	background-color: #051736;
+	padding: 1%;
+}
+
+.bar-panel {
+	list-style: none;
+	color: #FFF;
+}
+
+.bar-panel li{
+	float: left;
+	margin-left: 10px;
+}
+
+.menu {
+	background-color: #233045;
+	padding-top: 1%;
+}
+
+.menu-btn a {
+	color: #FFF;
+}
+
+.menu-btn {
+	padding: 10px 30px;
+	list-style: none;
+	float: left;
+}
+
+.active {
+	color: #051736;
+	background-color: #edf0f1;
+}
+
+.active a{
+	color: #000;
+	background-color: #edf0f1;
+}
+
+/*
+	Main page
+ */
+.menu_elements li:hover{
+	background-color: #CCC;
+}
+
+.menu_elements li{
+	padding: 1%;
+	list-style: none;
+}
+.menu_elements i{
+	font-size: 23px;
+}
+
+.add_website i {
+	font-size: 23px;	
+}
+
+.text-padding {
+	background-color: #fff;
+	padding: 3%;
+}
+
+.text-padding li {
+	list-style: none;
+}
+.text-padding a {
+	font-size: 20px;
+}
+
+.text-padding textarea {
+	height: 200px;
+}

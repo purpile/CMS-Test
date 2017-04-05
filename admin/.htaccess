@@ -1,0 +1,6 @@
+order allow,deny
+allow from all
+ 
+RewriteEngine Off
+
+php_value zlib.output_compression Off
